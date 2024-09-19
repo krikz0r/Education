@@ -11,6 +11,7 @@ enum MainViewTabs {
     case first
     case second
     case third
+	case charctersList
 }
 
 struct ContentView: View {
@@ -37,10 +38,12 @@ struct ContentView: View {
                     Text("Third Screen")
                 }
                 .tag(MainViewTabs.third)
+			SerialListScreen()
+				.tabItem {
+					Image(systemName: "pencil")
+					Text("Characters list")
+				}
+				.tag(MainViewTabs.charctersList)
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -1,0 +1,207 @@
+openapi: 3.0.0
+info:
+  title: Rick and Morty API
+  description: API для получения данных о персонажах, локациях и эпизодах из сериала Rick and Morty.
+  version: 1.0.0
+servers:
+  - url: https://rickandmortyapi.com/api
+tags:
+- name: Networking
+paths:
+  /character/:
+    get:
+      tags:
+      - Networking
+      summary: Получить список персонажей с пагинацией
+      parameters:
+        - name: page
+          in: query
+          description: Номер страницы для получения данных о персонажах.
+          required: false
+          schema:
+            type: integer
+            example: 19
+      responses:
+        '200':
+          description: Успешный ответ с данными о персонажах.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+
+  /location/:
+    get:
+      tags:
+      - Networking
+      summary: Получить список локаций с пагинацией
+      parameters:
+        - name: page
+          in: query
+          description: Номер страницы для получения данных о локациях.
+          required: false
+          schema:
+            type: integer
+            example: 2
+      responses:
+        '200':
+          description: Успешный ответ с данными о локациях.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LocationResponse'
+
+components:
+  schemas:
+    Character:
+      type: object
+      description: Модель персонажа из Rick and Morty
+      properties:
+        id:
+          type: integer
+          description: Идентификатор персонажа
+          example: 361
+        name:
+          type: string
+          description: Имя персонажа
+          example: "Toxic Rick"
+        status:
+          type: string
+          description: Статус персонажа (жив/мертв)
+          example: "Dead"
+        species:
+          type: string
+          description: Вид персонажа
+          example: "Humanoid"
+        type:
+          type: string
+          description: Дополнительное описание вида персонажа
+          example: "Rick's Toxic Side"
+        gender:
+          type: string
+          description: Пол персонажа
+          example: "Male"
+        origin:
+          type: object
+          description: Локация происхождения персонажа
+          properties:
+            name:
+              type: string
+              description: Имя локации происхождения
+              example: "Alien Spa"
+            url:
+              type: string
+              description: URL локации происхождения
+              example: "https://rickandmortyapi.com/api/location/64"
+        location:
+          type: object
+          description: Текущая локация персонажа
+          properties:
+            name:
+              type: string
+              description: Имя текущей локации
+              example: "Earth"
+            url:
+              type: string
+              description: URL текущей локации
+              example: "https://rickandmortyapi.com/api/location/20"
+        image:
+          type: string
+          description: URL изображения персонажа
+          example: "https://rickandmortyapi.com/api/character/avatar/361.jpeg"
+        episode:
+          type: array
+          description: Эпизоды, в которых появлялся персонаж
+          items:
+            type: string
+            example: "https://rickandmortyapi.com/api/episode/27"
+        url:
+          type: string
+          description: URL на информацию о персонаже
+          example: "https://rickandmortyapi.com/api/character/361"
+        created:
+          type: string
+          format: date-time
+          description: Дата и время создания персонажа
+          example: "2018-01-10T18:20:41.703Z"
+
+    Location:
+      type: object
+      description: Модель локации из Rick and Morty
+      properties:
+        id:
+          type: integer
+          description: Идентификатор локации
+          example: 20
+        name:
+          type: string
+          description: Имя локации
+          example: "Earth"
+        type:
+          type: string
+          description: Тип локации
+          example: "Planet"
+        dimension:
+          type: string
+          description: Измерение, в котором находится локация
+          example: "Dimension C-137"
+        residents:
+          type: array
+          description: Список персонажей, виденных в локации
+          items:
+            type: string
+            example: "https://rickandmortyapi.com/api/character/1"
+        url:
+          type: string
+          description: URL на информацию о локации
+          example: "https://rickandmortyapi.com/api/location/20"
+        created:
+          type: string
+          format: date-time
+          description: Дата и время создания локации
+          example: "2017-11-10T12:42:04.162Z"
+
+    ResponseInfo:
+      type: object
+      description: Модель, описывающая информацию о страницах в ответе.
+      properties:
+        count:
+          type: integer
+          description: Общее количество элементов
+          example: 826
+        pages:
+          type: integer
+          description: Общее количество страниц
+          example: 42
+        next:
+          type: string
+          description: URL следующей страницы
+          example: "https://rickandmortyapi.com/api/character/?page=20"
+        prev:
+          type: string
+          description: URL предыдущей страницы
+          example: "https://rickandmortyapi.com/api/character/?page=18"
+
+    Response:
+      type: object
+      description: Модель ответа на запрос списка персонажей.
+      properties:
+        info:
+          $ref: '#/components/schemas/ResponseInfo'
+        results:
+          type: array
+          description: Список персонажей
+          items:
+            $ref: '#/components/schemas/Character'
+
+    LocationResponse:
+      type: object
+      description: Модель ответа на запрос списка локаций.
+      properties:
+        info:
+          $ref: '#/components/schemas/ResponseInfo'
+        results:
+          type: array
+          description: Список локаций
+          items:
+            $ref: '#/components/schemas/Location'
+
