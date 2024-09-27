@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import OtusCore
 
 enum MainViewTabs {
     case first

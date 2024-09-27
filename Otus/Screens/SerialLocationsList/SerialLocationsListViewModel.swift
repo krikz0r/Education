@@ -6,13 +6,14 @@
 //
 
 import Foundation
-import RickAndMortyAPI
+import OtusCore
 import SwiftUI
 
 final class SerialLocationsListViewModel: ObservableObject {
-	@Published var loadedLocations: [RickAndMortyAPI.Location] = []
+	@Published var loadedLocations: [OtusCore.Location] = []
 	@Published var canLoad = true
-
+	@Injected var networkingApi: NetworkingAPI
+	
 	private var page = 1
 	private var totalPages = 1000
 	
@@ -23,7 +24,7 @@ final class SerialLocationsListViewModel: ObservableObject {
 		canLoad = false
 		Task { @MainActor in
 			
-			guard let result = try? await NetworkingAPI.locationGet(page: page) else {
+			guard let result = try? await networkingApi.locationGet(page: page) else {
 				canLoad = true
 				return
 			}
@@ -37,4 +38,4 @@ final class SerialLocationsListViewModel: ObservableObject {
 }
 
 // MARK: - Location Identifiable
-extension RickAndMortyAPI.Location: Identifiable {  }
+extension OtusCore.Location: Identifiable {  }

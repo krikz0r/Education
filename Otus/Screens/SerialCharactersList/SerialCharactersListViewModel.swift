@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import RickAndMortyAPI
+import OtusCore
 import SwiftUI
 
 final class SerialCharactersListViewModel: ObservableObject {
@@ -14,7 +14,8 @@ final class SerialCharactersListViewModel: ObservableObject {
 	@Published var loadedCharacters: [ModelCharacter] = []
 	@Published var canLoad = true
 	@State var pickerSelectedItem = PickerItem.characters
-
+	@Injected var networkingApi: NetworkingAPI
+	
 	private var page = 1
 	private var totalPages = 1000
 	
@@ -25,7 +26,7 @@ final class SerialCharactersListViewModel: ObservableObject {
 		canLoad = false
 		Task { @MainActor in
 			
-			guard let result = try? await NetworkingAPI.characterGet(page: page) else {
+			guard let result = try? await networkingApi.characterGet(page: page) else {
 				canLoad = true
 				return
 			}

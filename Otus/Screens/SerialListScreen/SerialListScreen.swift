@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import RickAndMortyAPI
+import OtusCore
 
 struct SerialListScreen: View {
 	enum PickerItem: String, CaseIterable {

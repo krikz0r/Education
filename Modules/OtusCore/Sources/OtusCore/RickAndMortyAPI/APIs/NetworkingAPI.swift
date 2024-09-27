@@ -10,8 +10,8 @@ import Foundation
 import AnyCodable
 #endif
 
-open class NetworkingAPI {
-
+open class NetworkingAPI: InjectedServiceProtocol {
+	public init() { }
     /**
      Получить список персонажей с пагинацией
      
@@ -19,7 +19,7 @@ open class NetworkingAPI {
      - returns: ModelResponse
      */
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func characterGet(page: Int? = nil) async throws -> ModelResponse {
+    open func characterGet(page: Int? = nil) async throws -> ModelResponse {
         return try await characterGetWithRequestBuilder(page: page).execute().body
     }
 
@@ -29,7 +29,7 @@ open class NetworkingAPI {
      - parameter page: (query) Номер страницы для получения данных о персонажах. (optional)
      - returns: RequestBuilder<ModelResponse> 
      */
-    open class func characterGetWithRequestBuilder(page: Int? = nil) -> RequestBuilder<ModelResponse> {
+    open func characterGetWithRequestBuilder(page: Int? = nil) -> RequestBuilder<ModelResponse> {
         let localVariablePath = "/character/"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -57,7 +57,7 @@ open class NetworkingAPI {
      - returns: LocationResponse
      */
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func locationGet(page: Int? = nil) async throws -> LocationResponse {
+    open func locationGet(page: Int? = nil) async throws -> LocationResponse {
         return try await locationGetWithRequestBuilder(page: page).execute().body
     }
 
@@ -67,7 +67,7 @@ open class NetworkingAPI {
      - parameter page: (query) Номер страницы для получения данных о локациях. (optional)
      - returns: RequestBuilder<LocationResponse> 
      */
-    open class func locationGetWithRequestBuilder(page: Int? = nil) -> RequestBuilder<LocationResponse> {
+    open func locationGetWithRequestBuilder(page: Int? = nil) -> RequestBuilder<LocationResponse> {
         let localVariablePath = "/location/"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import RickAndMortyAPI
+import OtusCore
 
 struct SerialCharacterDetailScreen: View {
 	let character: ModelCharacter

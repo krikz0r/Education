@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import RickAndMortyAPI
+import OtusCore
 
 struct SerialLocationsListView: View {
 	@StateObject var viewModel = SerialLocationsListViewModel()

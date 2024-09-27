@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import OtusCore
 
 @main
 struct OtusApp: App {
+	
+	init() {
+		registerServices()
+	}
+	
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+		
+	private func registerServices() {
+		ServiceLocator.shared.register(NetworkingAPI())
+	}
 }
