@@ -10,31 +10,24 @@
 		3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */; };
 		3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */; };
 		3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */; };
-		3A4BFEDE2C9C67C400DA7A1D /* SerialCharactersListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFEDD2C9C67C400DA7A1D /* SerialCharactersListViewItem.swift */; };
 		3A4BFEE32C9C6DEC00DA7A1D /* SerialLocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFEE22C9C6DEC00DA7A1D /* SerialLocationsListView.swift */; };
 		3A4BFEE52C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFEE42C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift */; };
-		3A4BFEE72C9C6E7000DA7A1D /* SerialLopcationsListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFEE62C9C6E7000DA7A1D /* SerialLopcationsListViewItem.swift */; };
 		3A4BFEEA2C9C6F9A00DA7A1D /* SerialListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFEE92C9C6F9A00DA7A1D /* SerialListScreen.swift */; };
 		3A67234C2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A67234B2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift */; };
 		3A780AC32C88751E00B6547A /* OtusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A780AC22C88751E00B6547A /* OtusApp.swift */; };
 		3A780AC52C88751E00B6547A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A780AC42C88751E00B6547A /* ContentView.swift */; };
 		3A780AC72C88751F00B6547A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A780AC62C88751F00B6547A /* Assets.xcassets */; };
 		3A780ACA2C88751F00B6547A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A780AC92C88751F00B6547A /* Preview Assets.xcassets */; };
-		3A807DE52C9EEBAB002A8B47 /* SerialCharacterImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A807DE42C9EEBAB002A8B47 /* SerialCharacterImageScreen.swift */; };
+		3A79BA552CAD6BDC001AE88D /* OtusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A79BA542CAD6BDC001AE88D /* OtusUI */; };
 		3ACAF0422CA6B37600734EBA /* OtusCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3ACAF0412CA6B37600734EBA /* OtusCore */; };
-		3ADD1C932C8878A900E6ADED /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD1C922C8878A900E6ADED /* FirstScreen.swift */; };
-		3ADD1C952C8878F200E6ADED /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD1C942C8878F200E6ADED /* SecondScreen.swift */; };
-		3ADD1C972C88795400E6ADED /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD1C962C88795400E6ADED /* ThirdScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListView.swift; sourceTree = "<group>"; };
 		3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListViewModel.swift; sourceTree = "<group>"; };
 		3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Paging.swift"; sourceTree = "<group>"; };
-		3A4BFEDD2C9C67C400DA7A1D /* SerialCharactersListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListViewItem.swift; sourceTree = "<group>"; };
 		3A4BFEE22C9C6DEC00DA7A1D /* SerialLocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialLocationsListView.swift; sourceTree = "<group>"; };
 		3A4BFEE42C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialLocationsListViewModel.swift; sourceTree = "<group>"; };
-		3A4BFEE62C9C6E7000DA7A1D /* SerialLopcationsListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialLopcationsListViewItem.swift; sourceTree = "<group>"; };
 		3A4BFEE92C9C6F9A00DA7A1D /* SerialListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialListScreen.swift; sourceTree = "<group>"; };
 		3A67234B2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharacterDetailScreen.swift; sourceTree = "<group>"; };
 		3A780ABF2C88751E00B6547A /* Otus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,12 +35,9 @@
 		3A780AC42C88751E00B6547A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A780AC62C88751F00B6547A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A780AC92C88751F00B6547A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A807DE42C9EEBAB002A8B47 /* SerialCharacterImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharacterImageScreen.swift; sourceTree = "<group>"; };
+		3A79BA532CAD6BD0001AE88D /* OtusUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusUI; path = Modules/OtusUI; sourceTree = SOURCE_ROOT; };
 		3AB4A2DB2C9C5D250096425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3ACAF0402CA6B30500734EBA /* OtusCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusCore; path = Modules/OtusCore; sourceTree = SOURCE_ROOT; };
-		3ADD1C922C8878A900E6ADED /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
-		3ADD1C942C8878F200E6ADED /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
-		3ADD1C962C88795400E6ADED /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACAF0422CA6B37600734EBA /* OtusCore in Frameworks */,
+				3A79BA552CAD6BDC001AE88D /* OtusUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,14 +56,10 @@
 		3A4BFED22C9C65BB00DA7A1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				3A807DE32C9EEB9E002A8B47 /* SerialCharacterImageScreen */,
 				3A67234A2C9EE482007DBFA7 /* SerialCharacterDetailScreen */,
 				3A4BFEE82C9C6F8B00DA7A1D /* SerialListScreen */,
 				3A4BFEE12C9C6DDD00DA7A1D /* SerialLocationsList */,
 				3A4BFED32C9C65C400DA7A1D /* SerialCharactersList */,
-				3ADD1C922C8878A900E6ADED /* FirstScreen.swift */,
-				3ADD1C942C8878F200E6ADED /* SecondScreen.swift */,
-				3ADD1C962C88795400E6ADED /* ThirdScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -82,7 +69,6 @@
 			children = (
 				3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */,
 				3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */,
-				3A4BFEDD2C9C67C400DA7A1D /* SerialCharactersListViewItem.swift */,
 			);
 			path = SerialCharactersList;
 			sourceTree = "<group>";
@@ -99,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				3A4BFEE22C9C6DEC00DA7A1D /* SerialLocationsListView.swift */,
-				3A4BFEE62C9C6E7000DA7A1D /* SerialLopcationsListViewItem.swift */,
 				3A4BFEE42C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift */,
 			);
 			path = SerialLocationsList;
@@ -141,6 +126,7 @@
 		3A780AC12C88751E00B6547A /* Otus */ = {
 			isa = PBXGroup;
 			children = (
+				3A79BA532CAD6BD0001AE88D /* OtusUI */,
 				3ACAF0402CA6B30500734EBA /* OtusCore */,
 				3AB4A2DB2C9C5D250096425E /* Info.plist */,
 				3A780AC22C88751E00B6547A /* OtusApp.swift */,
@@ -159,14 +145,6 @@
 				3A780AC92C88751F00B6547A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3A807DE32C9EEB9E002A8B47 /* SerialCharacterImageScreen */ = {
-			isa = PBXGroup;
-			children = (
-				3A807DE42C9EEBAB002A8B47 /* SerialCharacterImageScreen.swift */,
-			);
-			path = SerialCharacterImageScreen;
 			sourceTree = "<group>";
 		};
 		3AB4A2DC2C9C5D290096425E /* Frameworks */ = {
@@ -194,6 +172,7 @@
 			name = Otus;
 			packageProductDependencies = (
 				3ACAF0412CA6B37600734EBA /* OtusCore */,
+				3A79BA542CAD6BDC001AE88D /* OtusUI */,
 			);
 			productName = Otus;
 			productReference = 3A780ABF2C88751E00B6547A /* Otus.app */;
@@ -251,19 +230,13 @@
 			files = (
 				3A780AC52C88751E00B6547A /* ContentView.swift in Sources */,
 				3A4BFEE52C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift in Sources */,
-				3ADD1C932C8878A900E6ADED /* FirstScreen.swift in Sources */,
 				3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */,
-				3A4BFEE72C9C6E7000DA7A1D /* SerialLopcationsListViewItem.swift in Sources */,
 				3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */,
 				3A4BFEE32C9C6DEC00DA7A1D /* SerialLocationsListView.swift in Sources */,
-				3ADD1C972C88795400E6ADED /* ThirdScreen.swift in Sources */,
 				3A4BFEEA2C9C6F9A00DA7A1D /* SerialListScreen.swift in Sources */,
-				3A4BFEDE2C9C67C400DA7A1D /* SerialCharactersListViewItem.swift in Sources */,
 				3A67234C2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift in Sources */,
-				3A807DE52C9EEBAB002A8B47 /* SerialCharacterImageScreen.swift in Sources */,
 				3A780AC32C88751E00B6547A /* OtusApp.swift in Sources */,
 				3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */,
-				3ADD1C952C8878F200E6ADED /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +448,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A79BA542CAD6BDC001AE88D /* OtusUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OtusUI;
+		};
 		3ACAF0412CA6B37600734EBA /* OtusCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OtusCore;

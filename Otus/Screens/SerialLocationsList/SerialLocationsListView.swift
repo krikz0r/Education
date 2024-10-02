@@ -7,13 +7,14 @@
 
 import SwiftUI
 import OtusCore
+import OtusUI
 
 struct SerialLocationsListView: View {
 	@StateObject var viewModel = SerialLocationsListViewModel()
 	var body: some View {
 		List(viewModel.loadedLocations, id: \.self) { item in
 			let isElemLast = viewModel.loadedLocations.needToLoad(item)
-			SerialLopcationsListViewItem(name: item.name ?? "",
+			SerialLocationsListViewItem(name: item.name ?? "",
 										 type: item.type ?? "",
 										 dimension: item.dimension ?? "")
 			.onAppear {

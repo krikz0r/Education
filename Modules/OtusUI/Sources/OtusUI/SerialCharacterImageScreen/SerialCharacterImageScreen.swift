@@ -7,10 +7,14 @@
 
 import SwiftUI
 
-struct SerialCharacterImageScreen: View {
+public struct SerialCharacterImageScreen: View {
 	let imageURL: String
-	
-	var body: some View {
+
+	public init(imageURL: String) {
+		self.imageURL = imageURL
+	}
+
+	public var body: some View {
 		AsyncImage(url: URL(string: imageURL))
 	}
 }

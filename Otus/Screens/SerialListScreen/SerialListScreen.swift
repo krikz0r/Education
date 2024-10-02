@@ -7,6 +7,7 @@
 
 import SwiftUI
 import OtusCore
+import OtusUI
 
 struct SerialListScreen: View {
 	enum PickerItem: String, CaseIterable {

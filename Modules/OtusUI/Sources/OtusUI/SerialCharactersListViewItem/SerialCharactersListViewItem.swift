@@ -1,18 +1,24 @@
 //
 //  SerialCharactersListViewItem.swift
-//  Otus
 //
-//  Created by Anton on 19.09.2024.
+//
+//  Created by Anton on 02.10.2024.
 //
 
 import SwiftUI
 
-struct SerialCharactersListViewItem: View {
+public struct SerialCharactersListViewItem: View {
 	let name: String
 	let gender: String
 	let imageUrl: String
+	
+	public init(name: String, gender: String, imageUrl: String) {
+		self.name = name
+		self.gender = gender
+		self.imageUrl = imageUrl
+	}
 
-	var body: some View {
+	public var body: some View {
 		HStack(content: {
 			AsyncImage(url: URL(string: imageUrl)) { image in
 				image.resizable()

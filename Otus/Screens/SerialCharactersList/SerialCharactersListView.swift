@@ -7,6 +7,7 @@
 
 import SwiftUI
 import OtusCore
+import OtusUI
 
 struct SerialCharactersListView: View {
 	@StateObject var viewModel = SerialCharactersListViewModel()
