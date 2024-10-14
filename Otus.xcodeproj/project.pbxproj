@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A13B1772CBD508A0049A951 /* SuffixesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */; };
+		3A13B1792CBD50B60049A951 /* SuffixesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */; };
 		3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */; };
 		3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */; };
 		3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesScreen.swift; sourceTree = "<group>"; };
+		3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesScreenViewModel.swift; sourceTree = "<group>"; };
 		3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListView.swift; sourceTree = "<group>"; };
 		3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListViewModel.swift; sourceTree = "<group>"; };
 		3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Paging.swift"; sourceTree = "<group>"; };
@@ -53,9 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A13B1752CBD50770049A951 /* SuffixesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */,
+				3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */,
+			);
+			path = SuffixesScreen;
+			sourceTree = "<group>";
+		};
 		3A4BFED22C9C65BB00DA7A1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3A13B1752CBD50770049A951 /* SuffixesScreen */,
 				3A67234A2C9EE482007DBFA7 /* SerialCharacterDetailScreen */,
 				3A4BFEE82C9C6F8B00DA7A1D /* SerialListScreen */,
 				3A4BFEE12C9C6DDD00DA7A1D /* SerialLocationsList */,
@@ -233,8 +247,10 @@
 				3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */,
 				3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */,
 				3A4BFEE32C9C6DEC00DA7A1D /* SerialLocationsListView.swift in Sources */,
+				3A13B1792CBD50B60049A951 /* SuffixesScreenViewModel.swift in Sources */,
 				3A4BFEEA2C9C6F9A00DA7A1D /* SerialListScreen.swift in Sources */,
 				3A67234C2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift in Sources */,
+				3A13B1772CBD508A0049A951 /* SuffixesScreen.swift in Sources */,
 				3A780AC32C88751E00B6547A /* OtusApp.swift in Sources */,
 				3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */,
 			);

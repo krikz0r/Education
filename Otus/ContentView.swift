@@ -10,6 +10,7 @@ import OtusCore
 
 enum MainViewTabs {
 	case charctersList
+    case suffixIterator
 }
 
 struct ContentView: View {
@@ -23,6 +24,12 @@ struct ContentView: View {
 					Text("Characters list")
 				}
 				.tag(MainViewTabs.charctersList)
+            SuffixesScreen()
+                .tabItem {
+                    Text("Suffixes")
+                    Image(systemName: "swift")
+                }
+                .tag(MainViewTabs.suffixIterator)
 		}
 	}
 }
