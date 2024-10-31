@@ -21,11 +21,12 @@ struct SuffixesScreen: View {
             Picker(selection: $selectedTab, label: Text("Режим")) {
                 Text("Все суффиксы").tag(0)
                 Text("Топ 10").tag(1)
+                Text("История поиска").tag(2)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
-            
-            if selectedTab == 0 {
+            switch selectedTab {
+            case 0:
                 // Список всех суффиксов
                 VStack {
                     TextField("Поиск по суффиксам", text: $viewModel.searchQuery)
@@ -43,11 +44,14 @@ struct SuffixesScreen: View {
                         Text("\(suffix) – \(count)")
                     }
                 }
-            } else {
+            case 1:
                 // Топ 10 суффиксов
                 List(viewModel.topSuffixes, id: \.0) { suffix, count in
                     Text("\(suffix) – \(count)")
                 }
+            case 2:
+                SearchHistoryView(history: $viewModel.history)
+            default: EmptyView()
             }
         }
     }

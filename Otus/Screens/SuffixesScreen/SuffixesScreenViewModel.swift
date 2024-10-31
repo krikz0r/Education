@@ -15,9 +15,11 @@ class SuffixViewModel: ObservableObject {
     @Published var sortedSuffixes: [(String, Int)] = []
     @Published var topSuffixes: [(String, Int)] = []
     @Published var searchQuery: String = ""
-    
+    @Published var history: [SearchJob] = []
+
     private var cancellables = Set<AnyCancellable>()
-    
+    private var jobScheduler = SuffixJobScheduler()
+
     init() {
         // Дебаунс для поиска
         $searchQuery
@@ -39,6 +41,10 @@ class SuffixViewModel: ObservableObject {
         let creator = SuffixesCreator(text: text)
         self.sortedSuffixes = creator.allSuffixes.sorted { $0.key < $1.key }
         self.topSuffixes = creator.threeLetterSuffixes.sorted { $0.value > $1.value }.prefix(10).map { ($0.key, $0.value) }
+        Task { @MainActor in
+            await self.jobScheduler.addJob(text: text)
+            history = await jobScheduler.history
+        }
     }
     
     private func filterSuffixes(query: String) {

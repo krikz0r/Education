@@ -13,6 +13,7 @@ public struct SuffixesCreator {
     public var threeLetterSuffixes: [String: Int] = [:]
     
     public init(text: String) {
+        guard !text.isEmpty else { return }
         let words = text.split { !$0.isLetter }
         for word in words {
             let sequence = SuffixSequence(string: String(word))

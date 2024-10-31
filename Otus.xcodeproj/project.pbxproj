@@ -22,6 +22,7 @@
 		3A780ACA2C88751F00B6547A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A780AC92C88751F00B6547A /* Preview Assets.xcassets */; };
 		3A79BA552CAD6BDC001AE88D /* OtusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A79BA542CAD6BDC001AE88D /* OtusUI */; };
 		3ACAF0422CA6B37600734EBA /* OtusCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3ACAF0412CA6B37600734EBA /* OtusCore */; };
+		3AF4860E2CD387FB0044408A /* SearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4860D2CD387FB0044408A /* SearchHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3A79BA532CAD6BD0001AE88D /* OtusUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusUI; path = Modules/OtusUI; sourceTree = SOURCE_ROOT; };
 		3AB4A2DB2C9C5D250096425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3ACAF0402CA6B30500734EBA /* OtusCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusCore; path = Modules/OtusCore; sourceTree = SOURCE_ROOT; };
+		3AF4860D2CD387FB0044408A /* SearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */,
 				3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */,
+				3AF4860D2CD387FB0044408A /* SearchHistoryView.swift */,
 			);
 			path = SuffixesScreen;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */,
 				3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */,
 				3A4BFEE32C9C6DEC00DA7A1D /* SerialLocationsListView.swift in Sources */,
+				3AF4860E2CD387FB0044408A /* SearchHistoryView.swift in Sources */,
 				3A13B1792CBD50B60049A951 /* SuffixesScreenViewModel.swift in Sources */,
 				3A4BFEEA2C9C6F9A00DA7A1D /* SerialListScreen.swift in Sources */,
 				3A67234C2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift in Sources */,
