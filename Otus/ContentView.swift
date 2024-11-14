@@ -11,6 +11,7 @@ import OtusCore
 enum MainViewTabs {
 	case charctersList
     case suffixIterator
+    case fruitsClassifier
 }
 
 struct ContentView: View {
@@ -30,6 +31,12 @@ struct ContentView: View {
                     Image(systemName: "swift")
                 }
                 .tag(MainViewTabs.suffixIterator)
+            FruitsClassifierScreen()
+                .tabItem {
+                    Text("Fruits Classifier")
+                    Image(systemName: "person")
+                }
+                .tag(MainViewTabs.fruitsClassifier)
 		}
 	}
 }
