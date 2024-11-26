@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A13B1772CBD508A0049A951 /* SuffixesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */; };
 		3A13B1792CBD50B60049A951 /* SuffixesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */; };
+		3A4975072CF5EF5B005BF96B /* FaceCheckerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4975062CF5EF5B005BF96B /* FaceCheckerScreen.swift */; };
+		3A49750D2CF5EFC1005BF96B /* FruitsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3A4975092CF5EFC1005BF96B /* FruitsClassifier.mlmodel */; };
+		3A49750E2CF5EFC1005BF96B /* FruitsClassifierScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49750A2CF5EFC1005BF96B /* FruitsClassifierScreen.swift */; };
+		3A49750F2CF5EFC1005BF96B /* FruitsClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49750B2CF5EFC1005BF96B /* FruitsClassifierViewModel.swift */; };
 		3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */; };
 		3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */; };
 		3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */; };
@@ -22,12 +26,17 @@
 		3A780ACA2C88751F00B6547A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A780AC92C88751F00B6547A /* Preview Assets.xcassets */; };
 		3A79BA552CAD6BDC001AE88D /* OtusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3A79BA542CAD6BDC001AE88D /* OtusUI */; };
 		3ACAF0422CA6B37600734EBA /* OtusCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3ACAF0412CA6B37600734EBA /* OtusCore */; };
+		3AE802F02CF5FFA3007635A7 /* FaceCheckerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE802EF2CF5FFA3007635A7 /* FaceCheckerViewModel.swift */; };
 		3AF4860E2CD387FB0044408A /* SearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4860D2CD387FB0044408A /* SearchHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A13B1762CBD508A0049A951 /* SuffixesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesScreen.swift; sourceTree = "<group>"; };
 		3A13B1782CBD50B60049A951 /* SuffixesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixesScreenViewModel.swift; sourceTree = "<group>"; };
+		3A4975062CF5EF5B005BF96B /* FaceCheckerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCheckerScreen.swift; sourceTree = "<group>"; };
+		3A4975092CF5EFC1005BF96B /* FruitsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitsClassifier.mlmodel; sourceTree = "<group>"; };
+		3A49750A2CF5EFC1005BF96B /* FruitsClassifierScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsClassifierScreen.swift; sourceTree = "<group>"; };
+		3A49750B2CF5EFC1005BF96B /* FruitsClassifierViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsClassifierViewModel.swift; sourceTree = "<group>"; };
 		3A4BFED42C9C65E400DA7A1D /* SerialCharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListView.swift; sourceTree = "<group>"; };
 		3A4BFED62C9C65F800DA7A1D /* SerialCharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialCharactersListViewModel.swift; sourceTree = "<group>"; };
 		3A4BFED92C9C671300DA7A1D /* Collections+Paging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Paging.swift"; sourceTree = "<group>"; };
@@ -43,6 +52,7 @@
 		3A79BA532CAD6BD0001AE88D /* OtusUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusUI; path = Modules/OtusUI; sourceTree = SOURCE_ROOT; };
 		3AB4A2DB2C9C5D250096425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3ACAF0402CA6B30500734EBA /* OtusCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OtusCore; path = Modules/OtusCore; sourceTree = SOURCE_ROOT; };
+		3AE802EF2CF5FFA3007635A7 /* FaceCheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCheckerViewModel.swift; sourceTree = "<group>"; };
 		3AF4860D2CD387FB0044408A /* SearchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,9 +79,30 @@
 			path = SuffixesScreen;
 			sourceTree = "<group>";
 		};
+		3A4975052CF5EF47005BF96B /* FaceCheckerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A4975062CF5EF5B005BF96B /* FaceCheckerScreen.swift */,
+				3AE802EF2CF5FFA3007635A7 /* FaceCheckerViewModel.swift */,
+			);
+			path = FaceCheckerScreen;
+			sourceTree = "<group>";
+		};
+		3A49750C2CF5EFC1005BF96B /* FruitsClassifierScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A4975092CF5EFC1005BF96B /* FruitsClassifier.mlmodel */,
+				3A49750A2CF5EFC1005BF96B /* FruitsClassifierScreen.swift */,
+				3A49750B2CF5EFC1005BF96B /* FruitsClassifierViewModel.swift */,
+			);
+			path = FruitsClassifierScreen;
+			sourceTree = "<group>";
+		};
 		3A4BFED22C9C65BB00DA7A1D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3A49750C2CF5EFC1005BF96B /* FruitsClassifierScreen */,
+				3A4975052CF5EF47005BF96B /* FaceCheckerScreen */,
 				3A13B1752CBD50770049A951 /* SuffixesScreen */,
 				3A67234A2C9EE482007DBFA7 /* SerialCharacterDetailScreen */,
 				3A4BFEE82C9C6F8B00DA7A1D /* SerialListScreen */,
@@ -248,14 +279,19 @@
 				3A780AC52C88751E00B6547A /* ContentView.swift in Sources */,
 				3A4BFEE52C9C6E2C00DA7A1D /* SerialLocationsListViewModel.swift in Sources */,
 				3A4BFED72C9C65F800DA7A1D /* SerialCharactersListViewModel.swift in Sources */,
+				3A4975072CF5EF5B005BF96B /* FaceCheckerScreen.swift in Sources */,
 				3A4BFEDA2C9C671300DA7A1D /* Collections+Paging.swift in Sources */,
+				3AE802F02CF5FFA3007635A7 /* FaceCheckerViewModel.swift in Sources */,
 				3A4BFEE32C9C6DEC00DA7A1D /* SerialLocationsListView.swift in Sources */,
 				3AF4860E2CD387FB0044408A /* SearchHistoryView.swift in Sources */,
 				3A13B1792CBD50B60049A951 /* SuffixesScreenViewModel.swift in Sources */,
+				3A49750F2CF5EFC1005BF96B /* FruitsClassifierViewModel.swift in Sources */,
+				3A49750E2CF5EFC1005BF96B /* FruitsClassifierScreen.swift in Sources */,
 				3A4BFEEA2C9C6F9A00DA7A1D /* SerialListScreen.swift in Sources */,
 				3A67234C2C9EE496007DBFA7 /* SerialCharacterDetailScreen.swift in Sources */,
 				3A13B1772CBD508A0049A951 /* SuffixesScreen.swift in Sources */,
 				3A780AC32C88751E00B6547A /* OtusApp.swift in Sources */,
+				3A49750D2CF5EFC1005BF96B /* FruitsClassifier.mlmodel in Sources */,
 				3A4BFED52C9C65E400DA7A1D /* SerialCharactersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,7 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

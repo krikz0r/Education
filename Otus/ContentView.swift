@@ -12,6 +12,7 @@ enum MainViewTabs {
 	case charctersList
     case suffixIterator
     case fruitsClassifier
+    case faceChecker
 }
 
 struct ContentView: View {
@@ -37,6 +38,12 @@ struct ContentView: View {
                     Image(systemName: "person")
                 }
                 .tag(MainViewTabs.fruitsClassifier)
+            FaceCheckerScreen()
+                .tabItem {
+                    Text("Face Checker")
+                    Image(systemName: "person")
+                }
+                .tag(MainViewTabs.faceChecker)
 		}
 	}
 }
